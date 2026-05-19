@@ -1966,7 +1966,7 @@ class LaboratoryScreen extends StatelessWidget {
                             ),
                             clipBehavior: Clip.antiAlias,
                             child: tests[index]['image'] != null
-                                ? (tests[index]['isAsset'] == true
+                                ? (tests[index]['isAsset'] as dynamic == true
                                     ? Image.asset(tests[index]['image'] as String, fit: BoxFit.cover)
                                     : Image.network(tests[index]['image'] as String, fit: BoxFit.cover))
                                 : const Icon(LucideIcons.beaker, color: Colors.orange, size: 24),

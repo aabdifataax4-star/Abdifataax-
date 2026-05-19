@@ -12,16 +12,23 @@ Health Symptom Checker is a Flutter application designed to provide users with a
 
 ## 👥 Group Members (Group 1)
 
-1. Cabdiraxmaan Axmed
-2. Saalim Axmed Ibraahim
-3. Cabdiqani Maxamed Xuseen
+1. Abdifatah Ali odowa
+2. Saalim Ahmed ibraahim 
+3. Cabdiqani Maxamuud muuse 
 4. Axmed Xasan Axmed
-5. Cabdirashiid Xuseen
-6. Maxamed Yuusuf
+5. Mohamed Abdirashiid hussein
+6. Mohamed Mohamuud Yuusuf
 7. Nagiib Ahmed Yuusuf
+8. Mohamed Abdirahmaan ahmed 
 
-## 📸 Screenshots
+## 📸 Screenshots & Demo Video
 
-Here is a preview of the Health Symptom Checker user interface:
+### 🎬 Walkthrough Demo Video
+Here is a premium animated walkthrough showcasing all of the screens and features in action:
+
+![Health Symptom Checker Demo Walkthrough](assets/images/demo.webp)
+
+### 📊 Dashboard Screen
+Here is a high-level view of the main dashboard:
 
 ![Health Symptom Checker Dashboard](assets/images/screenshot.png)

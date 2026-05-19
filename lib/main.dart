@@ -832,12 +832,12 @@ class _DashboardScreenState extends State<DashboardScreen> {
             ),
             const SizedBox(height: 16),
             GridView.count(
-              crossAxisCount: 2,
+              crossAxisCount: MediaQuery.of(context).size.width > 800 ? 3 : 2,
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
               mainAxisSpacing: 16,
               crossAxisSpacing: 16,
-              childAspectRatio: 1.2,
+              childAspectRatio: MediaQuery.of(context).size.width > 800 ? 1.6 : 1.3,
               children: [
                 _DashboardCard(
                   icon: LucideIcons.activity,
@@ -1010,7 +1010,7 @@ class _DashboardCard extends StatelessWidget {
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
               padding: const EdgeInsets.all(10),
@@ -1020,6 +1020,7 @@ class _DashboardCard extends StatelessWidget {
               ),
               child: Icon(icon, color: color, size: 28),
             ),
+            const SizedBox(height: 12),
             Text(
               title, 
               style: TextStyle(
@@ -1027,6 +1028,7 @@ class _DashboardCard extends StatelessWidget {
                 fontSize: 15, 
                 color: color,
               ),
+              overflow: TextOverflow.ellipsis,
             ),
           ],
         ),
